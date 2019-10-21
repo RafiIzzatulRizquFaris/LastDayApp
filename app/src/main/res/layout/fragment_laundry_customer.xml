@@ -26,12 +26,19 @@
             android:layout_marginTop="8dp"
             android:hint="@string/main_qty"
             android:inputType="number" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"/>
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_laundry_customer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+
 
 </LinearLayout>
