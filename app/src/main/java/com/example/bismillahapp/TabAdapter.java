@@ -13,7 +13,7 @@ public class TabAdapter extends FragmentPagerAdapter {
     public Context context;
 
     public TabAdapter(@NonNull FragmentManager fm, Context context1) {
-        super(fm);
+        super(fm); /*DEPRECATED WOIIII*/
         context = context1;
     }
 
@@ -21,7 +21,7 @@ public class TabAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Fragment fragment = null;
-        switch (position){
+        switch (position) {
             case 0:
                 return new LaundryCustomer();
             case 1:
