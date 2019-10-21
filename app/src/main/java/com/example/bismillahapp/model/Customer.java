@@ -1,4 +1,4 @@
-package com.example.bismillahapp;
+package com.example.bismillahapp.model;
 
 public class Customer {
     public String getName() {
