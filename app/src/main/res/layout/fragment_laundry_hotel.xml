@@ -3,30 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LaundryHotel"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LaundryHotel">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <Spinner
+            android:id="@+id/spinner_hotel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:layout_marginTop="16dp" />
+
         <EditText
+            android:id="@+id/edt_hotel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:inputType="number"
-            android:hint="QTY"/>
+            android:hint="@string/main_qty"
+            android:inputType="number" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_laundry_hotel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

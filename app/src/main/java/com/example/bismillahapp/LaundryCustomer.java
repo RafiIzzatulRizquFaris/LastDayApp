@@ -24,15 +24,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class LaundryCustomer extends Fragment{
 
-
     public LaundryCustomer() {
-        // Required empty public constructor
     }
 
     Spinner spinner;
@@ -45,7 +39,6 @@ public class LaundryCustomer extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_laundry_customer, container, false);
         item = new ArrayList<>();
         idItem = new ArrayList<>();
@@ -53,7 +46,9 @@ public class LaundryCustomer extends Fragment{
         editText = view.findViewById(R.id.edt_customer);
 
         getSpinnerCustomer();
-        spinner.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, item));
+        if (getActivity()!=null){
+            spinner.setAdapter(new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, item));
+        }
         return view;
     }
 
