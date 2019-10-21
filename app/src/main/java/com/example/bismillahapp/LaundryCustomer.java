@@ -39,6 +39,7 @@ public class LaundryCustomer extends Fragment{
     EditText editText;
 
     ArrayList<String> item;
+    ArrayList<Integer> idItem;
 
 
     @Override
@@ -47,6 +48,7 @@ public class LaundryCustomer extends Fragment{
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_laundry_customer, container, false);
         item = new ArrayList<>();
+        idItem = new ArrayList<>();
         spinner = view.findViewById(R.id.spinner_customer);
         editText = view.findViewById(R.id.edt_customer);
 
@@ -65,6 +67,7 @@ public class LaundryCustomer extends Fragment{
                         int id = jsonObject.getInt("id");
                         String name = jsonObject.getString("name");
                         item.add(name);
+                        idItem.add(id);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
