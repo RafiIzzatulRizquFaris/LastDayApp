@@ -53,7 +53,7 @@ public class LaundryCustomer extends Fragment{
     }
 
     public void getSpinnerCustomer(){
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Environment.URL, new Response.Listener<JSONArray>() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Environment.URLGetService, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 for (int i = 0; i < response.length(); i++) {
