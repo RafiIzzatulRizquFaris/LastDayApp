@@ -1,7 +1,7 @@
 package com.example.bismillahapp.model;
 
-public class Customer {
-    private String id, createdAt, name, avatar;
+public class Employees {
+    private String id, createdAt, employeeName, avatar;
 
     public String getId() {
         return id;
@@ -19,12 +19,12 @@ public class Customer {
         this.createdAt = createdAt;
     }
 
-    public String getName() {
-        return name;
+    public String getEmployeeName() {
+        return employeeName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
     public String getAvatar() {
