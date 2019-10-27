@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LaundryCustomer">
+    tools:context=".fragment.LaundryCustomer">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,29 +15,35 @@
             android:id="@+id/spinner_customer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginBottom="@dimen/activity_small_margin"
+            android:padding="@dimen/activity_vertical_margin" />
 
         <EditText
             android:id="@+id/edt_customer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:hint="@string/main_qty"
             android:inputType="number" />
+
         <Button
             android:id="@+id/btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ADD"/>
+            android:text="@string/tambah" />
 
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_laundry_customer"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
-
-
+        android:text="Submit" />
 </LinearLayout>

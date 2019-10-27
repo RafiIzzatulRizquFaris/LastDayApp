@@ -1,4 +1,4 @@
-package com.example.bismillahapp;
+package com.example.bismillahapp.adapter;
 
 import android.content.Context;
 
@@ -7,10 +7,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class TabAdapter extends FragmentPagerAdapter {
+import com.example.bismillahapp.fragment.LaundryCustomer;
+import com.example.bismillahapp.fragment.LaundryHotel;
 
-    private String[] Mytitle = new String[]{"Laundry Customer", "Laundry Hotel"};
-    public Context context;
+public class TabAdapter extends FragmentPagerAdapter {
+    private String[] mTitle = new String[]{"Laundry Customer", "Laundry Hotel"};
+    private Context context;
 
     public TabAdapter(@NonNull FragmentManager fm, Context context1) {
         super(fm); /*DEPRECATED WOIIII*/
@@ -32,6 +34,6 @@ public class TabAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return Mytitle.length;
+        return mTitle.length;
     }
 }
